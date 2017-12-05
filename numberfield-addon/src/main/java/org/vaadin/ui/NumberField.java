@@ -294,10 +294,10 @@ public class NumberField extends TextField {
         final boolean isValid;
         if (isDecimalAllowed()) {
             isValid = NumberValidator.isValidDecimal(value,
-                    getState(), false);
+                    getState(), true);
         } else {
             isValid = NumberValidator.isValidInteger(value,
-                    getState(), false);
+                    getState(), true);
         }
 
         return isValid;
